@@ -1,5 +1,5 @@
 body {
-	font: 16px Bookman Old Style, Sans-Serif;
+	font: 14px Bookman Old Style, Sans-Serif;
 	line-height: 24px;
 	background: url(../images/textures/grey_wash_wall/grey_wash_wall.png);
 	height:100%;
@@ -78,3 +78,12 @@ div:target {
     text-decoration: none;
     color:           #eee;
 }
+/* ------------------------ */
+
+table {width: 100%;}
+.description {width: 85%;}
+p {margin: 0;}
+caption {text-align: left; font-style: italic; font-weight: 900}
+.my_place {font-style: italic;}
+.period {color: #777}
+.org_name a {text-decoration: none; color: black}
