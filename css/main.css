@@ -1,0 +1,78 @@
+body {
+	font: 16px Bookman Old Style, Sans-Serif;
+	line-height: 24px;
+	background: url(../images/textures/grey_wash_wall/grey_wash_wall.png);
+}
+
+#header_div {
+	border-radius:         20px 20px 20px 20px;
+	-moz-border-radius:    20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border: 0px solid #000000;
+	width: 800px;
+	margin: 0 auto;
+	background-image: url(../images/textures/fabric_of_squares_gray/fabric_of_squares_gray.png);
+	padding: 10px;
+}
+
+#payload_div {
+	border-radius:         20px 20px 20px 20px;
+	-moz-border-radius:    20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border: 0px solid #000000;
+	width: 800px;
+	margin: 5px auto;
+	background-image: url(../images/textures/fabric_of_squares_gray/fabric_of_squares_gray.png);
+	padding: 10px;
+}
+
+h1 {
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0 20px 0;
+	font-size: 48px;
+	font-weight: 300;
+	border-bottom: 1px solid #777;
+}
+
+h2 {
+	margin: 0 auto;
+	text-align: center;
+	color: #777;
+	padding: 10px 0 0 0;
+	font-size: 20px;
+	font-weight: 300;
+	/* border-bottom: 1px solid #777; */
+}
+
+/* Language handling */
+.lang {
+  display:  none;
+}
+
+#en {
+  display: block;
+}
+
+div[id*=en]:target ~ #ru {display: none;}
+div[id*=ru]:target ~ #en {display: none;}
+
+div:target {
+  display: block;
+}
+
+#active_lang {
+	color: #eee;
+	font-weight: 900;
+}
+
+#switch_lang
+{
+	float:right;
+}
+
+#switch_lang a
+{
+    text-decoration: none;
+    color:           #eee;
+}
