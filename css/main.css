@@ -5,6 +5,11 @@ body {
 	height:100%;
 }
 
+a {
+    text-decoration: none;
+	color: black;
+}
+
 .header_div {
 	border-radius:         35px;
 	-moz-border-radius:    35px;
@@ -81,9 +86,15 @@ div:target {
 /* ------------------------ */
 
 table {width: 100%;}
-.description {width: 85%;}
+.place {width: 85%;}
 p {margin: 0;}
 caption {text-align: left; font-style: italic; font-weight: 900}
 .my_place {font-style: italic;}
 .period {color: #777}
-.org_name a {text-decoration: none; color: black}
+.cv_table {padding-bottom: 15px}
+.definition {font-style: italic}
+.description {width: 70%}
+.lang_name {font-style: italic}
+.lang_level {width: 85%}
+.contact_type {font-style: italic}
+.contact_value {width: 80%}
