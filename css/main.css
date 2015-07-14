@@ -98,3 +98,5 @@ caption {text-align: left; font-style: italic; font-weight: 900}
 .lang_level {width: 85%}
 .contact_type {font-style: italic}
 .contact_value {width: 80%}
+
+#github_logo_text {vertical-align:middle; font-family: Calibri; font-weight: 900; font-size: 14pt;}
