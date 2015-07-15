@@ -1,59 +1,77 @@
 body {
-	font: 14px Bookman Old Style, Sans-Serif;
-	line-height: 24px;
-	background: url(../images/textures/grey_wash_wall/grey_wash_wall.png);
-	height:100%;
+  background: url(../images/textures/grey_wash_wall/grey_wash_wall.png);
+  font: 14px Bookman Old Style, Sans-Serif;
+  line-height: 24px;
+  height: 100%;
+}
+
+img {
+  border: 0;
 }
 
 a {
-    text-decoration: none;
-	color: black;
+  color: black;
+  text-decoration: none;
 }
 
-.header_div {
-	border-radius:         35px;
-	-moz-border-radius:    35px;
-	-webkit-border-radius: 35px;
-	border: 0px solid #000000;
-	width: 870px;
-	margin: 0 auto;
-	background-image: url(../images/textures/fabric_of_squares_gray/fabric_of_squares_gray.png);
-	padding: 10px;
+p {
+  margin: 0;
 }
 
-.payload_div {
-	border-radius:         0px 0px 10px 10px;
-	-moz-border-radius:    0px 0px 10px 10px;
-	-webkit-border-radius: 0px 0px 10px 10px;
-	border: 0px solid #000000;
-	width: 800px;
-	margin: 2px auto;
-	background-image: url(../images/textures/fabric_of_squares_gray/fabric_of_squares_gray.png);
-	padding: 10px;
-	height: 83vh;
+table {
+  padding-bottom: 15px;
+  width: 100%;
 }
+
+caption {
+  font-style: italic;
+  font-weight: 900;
+  text-align: left;
+ }
 
 h1 {
-	margin: 0 auto;
-	text-align: center;
-	padding: 10px 0 20px 0;
-	font-size: 48px;
-	font-weight: 300;
-	border-bottom: 1px solid #777;
+  border-bottom: 1px solid #777;
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  text-align: center;
 }
 
 h2 {
-	margin: 0 auto;
-	text-align: center;
-	color: #777;
-	padding: 10px 0 0 0;
-	font-size: 20px;
-	font-weight: 300;
-	/* border-bottom: 1px solid #777; */
+  color: #777;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 10px 0 0 0;
+  text-align: center;
 }
 
-/* Language handling */
-.lang {
+.header_div {
+  background-image: url(../images/textures/fabric_of_squares_gray/fabric_of_squares_gray.png);
+  border-radius:         35px;
+  -moz-border-radius:    35px;
+  -webkit-border-radius: 35px;
+  border: 0px solid #000000;
+  margin: 0 auto;
+  padding: 10px;
+  width: 870px;
+}
+
+.content_div {
+  background-image: url(../images/textures/fabric_of_squares_gray/fabric_of_squares_gray.png);
+  border: 0px solid #000000;
+  border-radius:         0px 0px 10px 10px;
+  -moz-border-radius:    0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  height: 83vh;
+  padding: 10px;
+  margin: 2px auto;
+  width: 800px;
+}
+
+/* START: language handling */
+.tab {
   display:  none;
 }
 
@@ -69,34 +87,77 @@ div:target {
 }
 
 .active_lang {
-	color: #eee;
-	font-weight: 900;
+  font-weight: 900;
 }
 
-.switch_lang
-{
-	float:right;
+.inactive_lang {
+  font-weight: 200;
 }
 
-.switch_lang a
-{
-    text-decoration: none;
-    color:           #eee;
+.lang_switcher {
+  float: right;
 }
-/* ------------------------ */
 
-table {width: 100%;}
-.place {width: 85%;}
-p {margin: 0;}
-caption {text-align: left; font-style: italic; font-weight: 900}
-.my_place {font-style: italic;}
-.period {color: #777}
-.cv_table {padding-bottom: 15px}
-.definition {font-style: italic}
-.description {width: 70%}
-.lang_name {font-style: italic}
-.lang_level {width: 85%}
-.contact_type {font-style: italic}
-.contact_value {width: 80%}
+.lang_switcher a {
+    color: #eee;
+}
+/* END: language handling */
 
-#github_logo_text {vertical-align:middle; font-family: Calibri; font-weight: 900; font-size: 14pt;}
+/* START: CV table elements */
+.school,
+.org {
+  width: 85%;
+}
+
+.speciality,
+.position {
+  font-style: italic;
+}
+
+.period {
+  color: #777;
+}
+
+.skill_descr,
+.lang_level,
+.contact_details,
+.interest {
+  font-style: italic;
+}
+
+.skill_descr {
+  width: 70%;
+}
+
+.lang_level {
+  width: 85%;
+}
+
+.contact_details {
+  width: 80%;
+}
+
+.linkedin_link img,
+.github_link,
+.vk_link img,
+.photosight_link img {
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.linkedin_link img{
+  height: 16px;
+}
+
+.github_link {
+  font: bold 14pt Calibri;
+}
+
+.vk_link img{
+  height: 20px;
+}
+
+.photosight_link img{
+  height: 40px;
+}
+/* END: CV table elements */
