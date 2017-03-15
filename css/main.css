@@ -19,8 +19,17 @@ p {
 }
 
 table {
+  border-collapse: collapse;
   padding-bottom: 15px;
   width: 100%;
+}
+
+td {
+  padding: 2px 0px 7px 5px;
+}
+
+tr:hover {
+  background-image: url(../images/textures/fabric_of_squares_gray/fabric_of_squares_gray_2.png);
 }
 
 caption {
@@ -105,7 +114,7 @@ div:target {
 /* START: CV table elements */
 .school,
 .org {
-  width: 85%;
+  width: 83%;
 }
 
 .speciality,
@@ -124,20 +133,14 @@ div:target {
   font-style: italic;
 }
 
-.skill_descr {
-  width: 70%;
-}
-
-.lang_level {
-  width: 85%;
-}
-
+.skill_descr,
+.lang_level,
 .contact_details {
-  width: 80%;
+  width: 75%;
 }
 
 .linkedin_link img,
-.github_link,
+.github_link img,
 .vk_link img,
 .photosight_link img {
   padding-right: 5px;
@@ -146,10 +149,6 @@ div:target {
 
 .linkedin_link img{
   height: 16px;
-}
-
-.github_link {
-  font: bold 14pt Calibri;
 }
 
 .vk_link img{
